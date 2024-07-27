@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navHeader {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dropDown {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .hamburgerIcon span {
+    background-color: #FF512F;
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 3.5px;
+  }
+  
+  .logo img {
+    width: 200px;
+    padding: 10px;
+  }
+  .navHeader .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contact .phone {
+    padding: 10px;
+  }
+  .phone img {
+    width: 25px;
+    padding: 2px;
+  }
+  .phone p {
+    float: right;
+    padding: 2px;
+    font-size: 15px;
+  }
+  .navLinksContainer {
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+  .navLinksContainer ul {
+    background: #fff;
+    display: flex;
+    margin: 2px 45px;
+  }
+  .navLinksContainer ul li {
+    margin: 15px;
+    list-style: none;
+  }
+  .navLinksContainer ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+  }
+  .gradientButton {
+    background-image: linear-gradient(to right, #fc4c28 0%, #e28e18 50%, #e24829 100%);
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .headerText{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+  .headerTextDescription{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .banner {
+    display: flex;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .banner img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: right bottom;
+  }
+  .bannerText {
+    width: 650px;
+    position: relative;
+    padding: 15% 10%;
+  }
+ 
+  .bannerText a {
+    text-decoration: none;
+  }
+  .bannerTextButton{
+    margin: 20px 0;
+    display: inline-block;
+  }
+
+
+  .section2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+  }
+  .section2 img {
+    width: 650px;
+    padding: 40px 50px;
+  }
+  .section2ImageText {
+    width: 40%;
+  }
+  
+  .section2Description{
+    margin-top: 25px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+  .section2ImageTextButton {
+    display: inline-block;
+    margin: 20px 0;
+  }
+  
+
+  .section3 {
+    padding: 70px 70px;
+    background-color: #E9EDF3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .card1{
+    margin-right: 20px;
+  }
+  .section3 .cards img {
+    width: 100%;
+  }
+  .cardDescription {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .cardDescription h3 {
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  .cardDescription p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  
+
+  footer {
+    background-color: #2B2B2B;
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 25px 0;
+  }
+  .address {
+    display: flex;
+    align-items: center;
+  }
+  .address img {
+    height: 25px;
+    padding: 5px;
+  }
+  .address p {
+    color: #fff;
+  }
+.footerEmailButton{
+  border: 1px solid yellow;
+  text-transform: none;
+}
+  .socialLinks a {
+    justify-content: center;
+    margin: 0 8px;
+  }
+  .copyrightInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 110px;
+  }
+  .copyrightInfo p {
+    color: #fff;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .navHeader {
+      padding: 0;
+      margin: auto 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    .navHeader .logo {
+      width: 100%;
+      border-bottom: 1px solid #DFDFDF;
+    }
+    .navHeader .contact{
+      flex-direction: column;
+    }
+    .logo img {
+      width: 150px;
+    }
+    .contact {
+      flex-direction: column;
+      width: 100%;
+    }
+    .contact .phone {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border-bottom: 1px solid #DFDFDF;
+    }
+    .email {
+      padding: 20px;
+      width: 100%;
+      border-bottom: 1px solid #DFDFDF;
+    }
+    .dropDown {
+      display: block;
+    }
+    .navLinksContainer {
+      display: none;
+      position: absolute;
+      width: 100%;
+    }
+    .navLinksContainer ul {
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+    }
+
+
+    .banner {
+      padding-bottom: 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+    .banner img {
+      position: inherit;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: left;
+    }
+    .bannerText {
+      width: 100vw;
+      background-color: #E9EDF3;
+      position: relative;
+      padding: 2% 5%;
+    }
+    .headerText {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+    .headerTextDescription {
+      margin-bottom: 8px;
+    }
+    .bannerTextButton {
+      font-size: 10px;
+      margin: 8px 0;
+    }
+
+
+    .section2 {
+      padding: 20px 0;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .section2 img {
+      width: 80%;
+      padding: 20px;
+    }
+    .section2ImageText {
+      width: 90%;
+    }
+    .section2ImageText .headerText {
+      font-size: 25px;
+      padding: 8px 0;
+    }
+    .headerTextDescription {
+      font-size: 15px;
+      padding: 0 0 8px 0;
+    }
+    .section2Description {
+      font-size: 12px;
+    }
+
+
+    .section3 {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .section3 .card1 {
+      margin-bottom: 30px;
+    }
+
+
+    .footerInfo {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+    .address {
+      padding: 10px 0;
+      justify-content: center;
+      width: 100%;
+      border-bottom: 1px solid #DFDFDF;
+    }
+    .address p {
+      font-size: 10px;
+      color: #fff;
+    }
+    .joinEmailButton {
+      padding: 15px 0 18px 0;
+      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid #DFDFDF;
+    }
+
+    .copyrightInfo {
+      padding: 10px 20px;
+    }
+    .copyrightInfo p {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    section.banner {
+      padding-bottom: 10px;
+    }
+    .section2 {
+      padding-top: 0px;
+    }
+  }
