@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{
+    background-color: none;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1a8d8d;
+    border-radius: 5px;
+}
+body{
+    background-color: #1a1a1d;
+    min-height: 100vh;
+    padding: 1rem 11rem 7rem;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container>h3{
+    font-size: 1.4rem;
+    padding: 4rem 8rem;
+    color: #ffffff;
+}
+.container .timeline-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    gap: 2rem 1rem;
+}
+.container .timeline-container .timeline-item{
+    position: relative;
+    padding: 0 3rem;
+    border-left: 1px solid #3d3d3d;
+}
+.container .timeline-container .timeline-item .timeline-year-range{
+    background-color: #2a2e35;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    color: #898a8b;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.container .timeline-container .timeline-item .timeline-header{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.container .timeline-container .timeline-item .timeline-header>span{
+    color: #898a8b;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.container .timeline-container .timeline-item .timeline-description{
+    color: #898a8b;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container .timeline-container .timeline-item .tl-icon{
+    background-color: #1a8d8d;
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: -25px;
+}
+.container .timeline-container .timeline-item .tl-icon i{
+    color: #ffffff;
+}
+@media screen and (max-width: 700px){
+    body{
+        padding: 1rem 2.5rem 7rem;
+        overflow-x: hidden;
+    }
+    .container .timeline-container{
+        grid-template-columns: 1fr;
+        gap: 2rem 1rem;
+    }
+    .container>h3{
+        padding: 2rem 3rem;
+    }
+}
