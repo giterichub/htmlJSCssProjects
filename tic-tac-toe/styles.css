@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-content: center;
+    background-color: #23d577;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 400px;
+    padding: 30px 0;
+    background-color: #1a1d24;
+    box-shadow: 2px 3px 4px #07a14f;
+}
+
+input[type='text']{
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    width: 88%;
+    height: 80px;
+    font-size: 30px;
+    text-align: right;
+    padding: 5px;
+    background-color: #14171e;
+    color: darkgray;
+    border: none;
+}
+
+.btn{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.btn input[type='button']{
+    width: 90px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 12px 0 0 0;
+    cursor: pointer;
+    border: 1px solid #252930;
+    transition: 0.2s ease-in;
+    background-color: #1a1d24;
+    color: #d6d6d7;
+}
+
+.btn input[type='button']:hover {
+    background-color: cadetblue;
+}
